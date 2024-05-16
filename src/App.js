@@ -1,10 +1,15 @@
 
+import ToDo from "./components/ToDo";
 
 function App() {
+
   return (
-    <div className="App">
-      <p>asdgh</p>
-    </div>
+    <main>
+      <div className="center">
+        <h2>To Do</h2>
+        <ToDo />
+      </div>
+    </main>
   );
 }
 

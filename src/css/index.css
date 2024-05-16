@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+html {
+  scrollbar-gutter: stable;
 }
 
 .container {
@@ -34,4 +39,106 @@ body {
 
 .gap-20 {
   gap: 20px;
+}
+
+/*
+  to do app
+*/
+
+main {
+  padding-top: 40px;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 800;
+  color: #fff;
+}
+
+input[type="text"] {
+  padding: 0 12px;
+  height: 40px;
+  width: 450px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+input[type="button"] {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  height: 40px;
+  background-color: #0ca6cd;
+  color: #fff;
+  padding: 0 12px;
+  width: 100px;
+}
+
+input[type="button"]:hover {
+  background-color: #dbe5e6;
+  color: #0ca6cd;
+}
+
+.to-do-item {
+  margin-top: 15px;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  width: 550px;
+  overflow: hidden;
+}
+
+.complete {
+  background-color: #b2b3b3;
+}
+
+.complete .text {
+  text-decoration: line-through;
+}
+
+.buttons {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.buttons button {
+  background-color: transparent;
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+}
+
+.delete-b {
+  color: #d20a0a;
+}
+
+.edit-b {
+  color: #0bac1b;
+}
+
+.complete-b {
+  color: #0c47db;
+}
+
+.delete-b:hover {
+  color: #8f0d0d;
+}
+
+.edit-b:hover {
+  color: #088714;
+}
+
+.complete-b:hover {
+  color: #083095;
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 600;
 }
